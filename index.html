@@ -11,14 +11,19 @@
     <link rel="icon" href="images/favicon.png" />
   </head>
 
-  <body>
-    <h1> Embed code Test </h1>
+  <body id="preview">
+    <h1>Preview of minified widget.js</h1>
+    <div id='storemapper'>
+    <p>Store Locator is loading from <a href='https://www.storemapper.co'>StoreMapper</a>...</p>
+    </div>
+
+
     <script data-storemapper-id='1' data-storemapper-categories='' data-storemapper-language='' data-storemapper-env=''>
       (function() {
       var script = document.createElement('script');
       script.type  = 'text/javascript';script.async = true;
       script.src = 'https://www.storemapper.co/js/widget.js';
-      var entry = document.getElementsByTagName('script')[0];entry.parentNode.insertBefore(script, entry);}());
-    </script>
+      var entry = document.getElementsByTagName('script')[0];entry.parentNode.insertBefore(script, entry);}());</script>
+    <p>Notes on this page you can pass in user_id, language and categories in the URL which get inserted in to the embed code on the page. Example: <pre>/?user_id=3&categories=["category1"]&language="id"</pre></p>
   </body>
 </html>
